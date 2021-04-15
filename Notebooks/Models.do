@@ -71,6 +71,21 @@ eststo: reg log_casas_afect i.sect_numb i.pib_quartile c.distance##sect_numb c.l
 
 eststo: reg log_casas_afect i.pib_quartile c.distance##i.pib_quartile c.log_res##i.pib_quartile  c.log_con##i.pib_quartile  c.internal_migartion_miles##i.pib_quartile , r 
 
+reg log_casas_afect log_res log_con distance NúmerodeSitiosdeCobertura internal_migartion_miles log_pob_hog log_pob i.sect_numb i.pib_quartile , r
+// log_res log_con internal_migartion_miles distance	
+
+
+** Models final **
+reg log_casas_afect i.sect_numb , r
+reg log_casas_afect i.sect_numb i.pib_quartile , r
+reg log_casas_afect log_res log_con internal_migartion_miles distance i.sect_numb, r 
+reg log_casas_afect log_res log_con internal_migartion_miles distance i.pib_quartile, r 
+reg log_casas_afect log_res log_con internal_migartion_miles distance i.sect_numb i.pib_quartile, r 
+
+
+** fullnote ***
+
+
 
 
 
